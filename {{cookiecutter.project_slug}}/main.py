@@ -19,6 +19,7 @@ SECRET_KEY = {{cookiecutter.SECRET_KEY}} #in a real system; swap this with a sec
 HOST_IP = {{cookiecutter.HOST_IP}}
 PANEL_PORT = {{cookiecutter.PANEL_PORT}}
 FASTAPI_PORT = {{cookiecutter.FASTAPI_PORT}}
+PROJECT_NAME = {{cookiecutter.PROJECT_NAME}}
 
 logger = logging.getLogger('uvicorn.error')
 
@@ -43,7 +44,7 @@ async def bokeh_app_page(request: Request):
         session_id=generate_session_id(SECRET_KEY, signed=True), url=url
     )
 
-    return templates.TemplateResponse("base.html", {"request": request,"script":script})
+    return templates.TemplateResponse("base.html", {"request": request,"script":script,"PROJECT_NAME":PROJECT_NAME})
 
 #launch bokeh server
 panel_app = pn.serve({'/app': lambda :createApp().layout},
