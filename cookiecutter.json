@@ -1,4 +1,5 @@
 {"AUTHOR_NAME":"Default",
+    "project_slug":"fastapi_panel_demo",
     "PROJECT_NAME":"FastAPI Panel Demo",
     "HOST_IP":"'127.0.0.6'",
     "PANEL_PORT":5000,
