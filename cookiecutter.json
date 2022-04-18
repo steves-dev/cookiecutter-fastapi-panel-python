@@ -5,4 +5,10 @@
     "FASTAPI_PORT":8000,
     "SECRET_KEY":"CHANGE_THIS",
     "VENV_NAME":"venv_fastapi_panel",
-    "conda_activate_path":"C:\\anaconda3\\Scripts\\activate.bat"}
+    "conda_activate_path":"C:\\anaconda3\\Scripts\\activate.bat",
+    "_copy_without_render": [
+        "*.html",
+        "*.js",
+        "*.map",
+        "*.css"
+   ]}
