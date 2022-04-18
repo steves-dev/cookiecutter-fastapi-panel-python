@@ -15,8 +15,8 @@ app = FastAPI()
 app.mount("/static",StaticFiles(directory='static'),name='static')
 templates = Jinja2Templates(directory="static/templates")
 
-SECRET_KEY = {{cookiecutter.SECRET_KEY}} #in a real system; swap this with a secret key outside of your source code
-HOST_IP = {{cookiecutter.HOST_IP}}
+SECRET_KEY = '{{cookiecutter.SECRET_KEY}}' #in a real system; swap this with a secret key outside of your source code
+HOST_IP = '{{cookiecutter.HOST_IP}}'
 PANEL_PORT = {{cookiecutter.PANEL_PORT}}
 FASTAPI_PORT = {{cookiecutter.FASTAPI_PORT}}
 PROJECT_NAME = '{{cookiecutter.PROJECT_NAME}}'
