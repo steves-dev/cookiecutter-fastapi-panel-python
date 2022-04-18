@@ -19,7 +19,7 @@ SECRET_KEY = {{cookiecutter.SECRET_KEY}} #in a real system; swap this with a sec
 HOST_IP = {{cookiecutter.HOST_IP}}
 PANEL_PORT = {{cookiecutter.PANEL_PORT}}
 FASTAPI_PORT = {{cookiecutter.FASTAPI_PORT}}
-PROJECT_NAME = {{cookiecutter.PROJECT_NAME}}
+PROJECT_NAME = '{{cookiecutter.PROJECT_NAME}}'
 
 logger = logging.getLogger('uvicorn.error')
 
